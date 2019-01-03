@@ -1,0 +1,15 @@
+﻿@model SklepInternetowy.Models.User
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<div>
+    @using (Html.BeginForm("Register", "User"))
+    {
+        @Html.EditorFor(x => x)
+        <input type="submit" value="Wyślij" />
+    }
+</div>
